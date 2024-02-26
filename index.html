@@ -7,15 +7,66 @@
     <div id="container">
         <img src="monke.png" height="300" width="300">
         <h1>Monke Tunes</h1>
-
+        <h3>Nice Gorilla Store</h3>
+        <button onclick="play1()">Play/Stop</button>
         <h3>Avast! Beach Cove!</h3>
-        <audio controls src="avast-beach_cove.mp3">
+        <button onclick="play2()">Play/Stop</button>
         <h3>Mountian Medley</h3>
-        <audio controls src="mountain_medley.mp3">
+        <button onclick="play3()">Play/Stop</button>
         <h3>Spelunke Monke</h3>
-        <audio controls src="spelunke_monke.mp3">
+        <button onclick="play4()">Play/Stop</button>
     </div>
 </body>
+<script>
+    bool play1 = false
+    bool play2 = false
+    bool play3 = false
+    bool play4 = false
+    function play1()
+        {
+            var audio1 = new Audio('nice_gorilla_store.mp3');
+            if (play1 == true) {
+                audio1 = null;
+                play1 = false;
+            } else {
+                var audio1 = new Audio('nice_gorilla_store.mp3');
+                audio1.play();
+                play1 = true;
+            }
+        }
+    function play2()
+        {
+            var audio2 = new Audio('avast-beach_cove.mp3');
+            if (play2 == true) {
+                audio2 = null;
+                play2 = false;
+            } else {
+                var audio2 = new Audio('avast-beach_cove.mp3');
+                audio2.play();
+                play2 = true;
+            }
+        }
+    function play3()
+        {
+            var audio3 = new Audio('mountian_medley.mp3');
+            if (play3 == true) {
+                audio3 = null;
+            } else {
+                var audio3 = new Audio('mountian_medley.mp3');
+                audio3.play();
+            }
+        }
+    function play4()
+        {
+            var audio4 = new Audio('spelunke_monke.mp3');
+            if (play4 == true) {
+                audio4 = null;
+            } else {
+                var audio4 = new Audio('spelunke_monke.mp3');
+                audio4.play();
+            }
+        }
+</script>
     <style>
         body {
             background-color: gray;
