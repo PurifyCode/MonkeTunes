@@ -18,52 +18,56 @@
     </div>
 </body>
 <script>
-    bool play1 = false
-    bool play2 = false
-    bool play3 = false
-    bool play4 = false
+    const play1b = false
+    const play2b = false
+    const play3b = false
+    const play4b = false
     function play1()
         {
             var audio1 = new Audio('nice_gorilla_store.mp3');
-            if (play1 == true) {
+            if (play1b == true) {
                 audio1 = null;
-                play1 = false;
+                play1b = false;
             } else {
                 var audio1 = new Audio('nice_gorilla_store.mp3');
                 audio1.play();
-                play1 = true;
+                play1b = true;
             }
         }
     function play2()
         {
             var audio2 = new Audio('avast-beach_cove.mp3');
-            if (play2 == true) {
+            if (play2b == true) {
                 audio2 = null;
-                play2 = false;
+                play2b = false;
             } else {
                 var audio2 = new Audio('avast-beach_cove.mp3');
                 audio2.play();
-                play2 = true;
+                play2b = true;
             }
         }
     function play3()
         {
             var audio3 = new Audio('mountian_medley.mp3');
-            if (play3 == true) {
+            if (play3b == true) {
                 audio3 = null;
+                play3b = false;
             } else {
                 var audio3 = new Audio('mountian_medley.mp3');
                 audio3.play();
+                play3b = true;
             }
         }
     function play4()
         {
             var audio4 = new Audio('spelunke_monke.mp3');
-            if (play4 == true) {
+            if (play4b == true) {
                 audio4 = null;
+                play4b = false;
             } else {
                 var audio4 = new Audio('spelunke_monke.mp3');
                 audio4.play();
+                play4b = true;
             }
         }
 </script>
