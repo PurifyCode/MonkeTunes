@@ -27,11 +27,11 @@
             var audio1 = new Audio('nice_gorilla_store.mp3');
             if (play1b == 1) {
                 audio1.stop();
-                play1b = 0;
+                const play1b = 0;
             } else {
                 var audio1 = new Audio('nice_gorilla_store.mp3');
                 audio1.play();
-                play1b = 1;
+                const play1b = 1;
             }
         }
     function play2()
@@ -39,11 +39,11 @@
             var audio2 = new Audio('avast-beach_cove.mp3');
             if (play2b == 1) {
                 audio2.stop();
-                play2b = 0;
+                const play2b = 0;
             } else {
                 var audio2 = new Audio('avast-beach_cove.mp3');
                 audio2.play();
-                play2b = 1;
+                const play2b = 1;
             }
         }
     function play3()
@@ -51,23 +51,23 @@
             var audio3 = new Audio('mountian_medley.mp3');
             if (play3b == 1) {
                 audio3.stop();
-                play3b = 0;
+                const play3b = 0;
             } else {
                 var audio3 = new Audio('mountian_medley.mp3');
                 audio3.play();
-                play3b = 1;
+                const play3b = 1;
             }
         }
     function play4()
         {
             var audio4 = new Audio('spelunke_monke.mp3');
             if (play4b == 1) {
-                audio4 = null;
-                play4b = 0;
+                audio4.stop();
+                const play4b = 0;
             } else {
                 var audio4 = new Audio('spelunke_monke.mp3');
                 audio4.play();
-                play4b = 1;
+                const play4b = 1;
             }
         }
 </script>
