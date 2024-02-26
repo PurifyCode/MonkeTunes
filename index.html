@@ -19,6 +19,7 @@
 </body>
 <script>
     const play1b = 0
+    const dontExec = 0
     const play2b = 0
     const play3b = 0
     const play4b = 0
@@ -26,13 +27,16 @@
         {
             var audio1 = new Audio('nice_gorilla_store.mp3');
             if (play1b == 1) {
-                audio1.stop();
+                audio1.play();
                 const play1b = 0;
-            } else {
+                const dontExec = 1
+            } elseif (dontExec != 1) {
                 var audio1 = new Audio('nice_gorilla_store.mp3');
                 audio1.play();
                 const play1b = 1;
+            
             }
+            const dontExec = 0
         }
     function play2()
         {
@@ -40,11 +44,13 @@
             if (play2b == 1) {
                 audio2.stop();
                 const play2b = 0;
-            } else {
+                const dontExec = 1
+            } elseif (dontExec != 1) {
                 var audio2 = new Audio('avast-beach_cove.mp3');
                 audio2.play();
                 const play2b = 1;
             }
+            const dontExec = 0
         }
     function play3()
         {
@@ -52,11 +58,13 @@
             if (play3b == 1) {
                 audio3.stop();
                 const play3b = 0;
-            } else {
+                const dontExec = 1
+            } elseif (dontExec != 1) {
                 var audio3 = new Audio('mountian_medley.mp3');
                 audio3.play();
                 const play3b = 1;
             }
+            const dontExec = 0
         }
     function play4()
         {
@@ -64,11 +72,13 @@
             if (play4b == 1) {
                 audio4.stop();
                 const play4b = 0;
-            } else {
+                const dontExec = 1
+            } elseif (dontExec != 1) {
                 var audio4 = new Audio('spelunke_monke.mp3');
                 audio4.play();
                 const play4b = 1;
             }
+            const dontExec = 0
         }
 </script>
     <style>
